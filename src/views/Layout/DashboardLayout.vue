@@ -14,18 +14,34 @@
 
         <sidebar-item
             :link="{
-              name: 'Icons',
+              name: 'Classify',
               path: '/icons',
-              icon: 'ni ni-planet text-blue'
+              icon: 'ni ni-book-bookmark'
               }"
             >
         </sidebar-item>
 
         <sidebar-item
+                :link="{
+                  name: 'Review',
+                  path: '/tables',
+                  icon: 'ni ni-bullet-list-67 text-red'
+                }">
+        </sidebar-item>
+
+        <sidebar-item
               :link="{
-                name: 'Maps',
+                name: 'Statistics',
                 path: '/maps',
-                icon: 'ni ni-pin-3 text-orange'
+                icon: 'ni ni-chart-bar-32'
+              }">
+        </sidebar-item>
+
+        <sidebar-item
+              :link="{
+                name: 'Introduce',
+                path: '/maps',
+                icon: 'ni ni-building'
               }">
         </sidebar-item>
 
@@ -34,14 +50,6 @@
                 name: 'User Profile',
                 path: '/profile',
                 icon: 'ni ni-single-02 text-yellow'
-                }">
-        </sidebar-item>
-
-        <sidebar-item
-                :link="{
-                  name: 'Tables',
-                  path: '/tables',
-                  icon: 'ni ni-bullet-list-67 text-red'
                 }">
         </sidebar-item>
 
@@ -60,7 +68,7 @@
                   }">
         </sidebar-item>
       </template>
-
+<!-- 
       <template slot="links-after">
         <hr class="my-3">
         <h6 class="navbar-heading p-0 text-muted">Documentation</h6>
@@ -81,7 +89,7 @@
               <b-nav-text class="p-0">Components</b-nav-text>
           </b-nav-item>
         </b-nav>
-      </template>
+      </template> -->
     </side-bar>
     <div class="main-content">
       <dashboard-navbar :type="$route.meta.navbarType"></dashboard-navbar>
@@ -141,5 +149,5 @@
     }
   };
 </script>
-<style lang="scss">
-</style>
+  <style lang="scss">
+ </style>

@@ -1,13 +1,13 @@
 <template>
     <b-card no-body>
         <b-card-header class="border-0">
-            <h3 class="mb-0">Light table</h3>
+            <h3 class="mb-0">Review Contents</h3>
         </b-card-header>
 
         <el-table class="table-responsive table"
                   header-row-class-name="thead-light"
                   :data="projects">
-            <el-table-column label="Project"
+            <el-table-column label="제목"
                              min-width="310px"
                              prop="name">
                 <template v-slot="{row}">
@@ -21,12 +21,12 @@
                     </b-media>
                 </template>
             </el-table-column>
-            <el-table-column label="Budget"
+            <el-table-column label="작성자"
                              prop="budget"
                              min-width="140px">
             </el-table-column>
 
-            <el-table-column label="Status"
+            <el-table-column label="작성일"
                              min-width="170px"
                              prop="status">
                 <template v-slot="{row}">
@@ -37,7 +37,7 @@
                 </template>
             </el-table-column>
 
-            <el-table-column label="Users" min-width="190px">
+            <el-table-column label="조회" min-width="190px">
                 <div class="avatar-group">
                     <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip"
                        data-original-title="Ryan Tompson">
@@ -58,7 +58,7 @@
                 </div>
             </el-table-column>
 
-            <el-table-column label="Completion"
+            <el-table-column label="추천(%)"
                              prop="completion"
                              min-width="240px">
                 <template v-slot="{row}">

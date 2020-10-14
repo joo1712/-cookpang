@@ -82,25 +82,25 @@
                 <!--Divider-->
                 <hr class="my-3">
                 <!--Heading-->
-                <h6 class="navbar-heading text-muted">Documentation</h6>
+                <h6 class="navbar-heading text-muted">뭐가있을지...</h6>
                 <!--Navigation-->
                 <ul class="navbar-nav mb-md-3">
                     <li class="nav-item">
                         <a class="nav-link"
                            href="https://www.creative-tim.com/learning-lab/bootstrap-vue/alerts/argon-dashboard">
-                            <i class="ni ni-spaceship"></i> Getting started
+                            <i class="ni ni-spaceship"></i> 생각중...
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"
                            href="https://www.creative-tim.com/learning-lab/bootstrap-vue/colors/argon-dashboard">
-                            <i class="ni ni-palette"></i> Foundation
+                            <i class="ni ni-palette"></i> 생각중...
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"
                            href="https://www.creative-tim.com/learning-lab/bootstrap-vue/alerts/argon-dashboard">
-                            <i class="ni ni-ui-04"></i> Components
+                            <i class="ni ni-ui-04"></i> 생각중...
                         </a>
                     </li>
                 </ul>

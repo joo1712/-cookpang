@@ -69,9 +69,7 @@
                   </div>
                 </b-form>
               </validation-observer>
-            </b-card-body>
-          </b-card>
-          <b-row class="mt-3">
+            <b-row class="mt-3">
             <b-col cols="6">
               <router-link to="/dashboard" class="text-light"><small>Forgot password?</small></router-link>
             </b-col>
@@ -79,6 +77,8 @@
               <router-link to="/register" class="text-light"><small>Create new account</small></router-link>
             </b-col>
           </b-row>
+            </b-card-body>
+          </b-card>
         </b-col>
       </b-row>
     </b-container>
