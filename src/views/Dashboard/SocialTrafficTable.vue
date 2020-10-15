@@ -3,9 +3,9 @@
     <template v-slot:header>
       <b-row align-v="center">
         <b-col>
-          <h3 class="mb-0">Social traffic</h3>
+          <h3 class="mb-0">Top 추천 회원</h3>
         </b-col>
-        <b-col class="text-right">
+        <b-col class="text-right" v-show="false">
           <base-button size="sm" type="primary">See all</base-button>
         </b-col>
       </b-row>
@@ -16,16 +16,16 @@
       class="table-responsive table"
       :data="tableData"
       header-row-class-name="thead-light">
-      <el-table-column label="Referral" min-width="115px" prop="name">
+      <el-table-column label="작성자" min-width="115px" prop="name">
         <template v-slot="{row}">
           <div class="font-weight-600">{{row.name}}</div>
         </template>
       </el-table-column>
 
-      <el-table-column label="Visitors" min-width="110px" prop="visitors">
+      <el-table-column label="개시글수" min-width="110px" prop="visitors">
       </el-table-column>
 
-      <el-table-column min-width="220px" prop="progress">
+      <el-table-column label="추천" min-width="220px" prop="progress">
         <template v-slot="{row}">
           <div class="d-flex align-items-center">
             <span class="mr-2">{{row.progress}}%</span>
@@ -53,33 +53,33 @@
       return {
         tableData: [
           {
-            name: 'Facebook',
-            visitors: '1,480',
-            progress: 60,
+            name: '오영균',
+            visitors: '47',
+            progress: 87,
             progressType: 'gradient-danger',
           },
           {
-            name: 'LinkedIn',
-            visitors: '5,480',
-            progress: 70,
+            name: '주우형',
+            visitors: '43',
+            progress: 79,
             progressType: 'gradient-success',
           },
           {
-            name: 'Google',
-            visitors: '4,807',
-            progress: 80,
+            name: '관리자',
+            visitors: '50',
+            progress: 68,
             progressType: 'gradient-primary',
           },
           {
-            name: 'Instagram',
-            visitors: '3,678',
-            progress: 75,
+            name: 'Cocomelon',
+            visitors: '16',
+            progress: 55,
             progressType: 'gradient-info',
           },
           {
-            name: 'Twitter',
-            visitors: '2,645',
-            progress: 30,
+            name: '뽀로로',
+            visitors: '2',
+            progress: 49,
             progressType: 'gradient-warning',
           }
         ]
