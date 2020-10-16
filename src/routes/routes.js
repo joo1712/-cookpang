@@ -18,25 +18,31 @@ const routes = [
         component: () => import(/* webpackChunkName: "demo" */ '../views/Dashboard.vue')
       },
       {
-        path: '/icons',
-        name: 'icons',
-        component: () => import(/* webpackChunkName: "demo" */ '../views/Icons.vue')
+        path: '/classify',
+        name: 'classify',
+        component: () => import(/* 레시피 게시판 "demo" */ '../views/Classify.vue')
+      },
+      {
+        path: '/review',
+        name: 'review',
+        component: () => import(/* 후기 게시판: "demo" */ '../views/Review.vue')
+      },
+      {
+        path: '/statistics',
+        name: 'statistics',
+        component: () => import(/* 통계 메뉴: "demo" */ '../views/Statistics.vue')
+      },
+      {
+        path: '/introduce',
+        name: 'introduce',
+        component: () => import(/* 통계 메뉴: "demo" */ '../views/Introduce.vue')
       },
       {
         path: '/profile',
         name: 'profile',
         component: () => import(/* webpackChunkName: "demo" */ '../views/Pages/UserProfile.vue')
       },
-      {
-        path: '/maps',
-        name: 'maps',
-        component: () => import(/* webpackChunkName: "demo" */ '../views/GoogleMaps.vue')
-      },
-      {
-        path: '/tables',
-        name: 'tables',
-        component: () => import(/* webpackChunkName: "demo" */ '../views/RegularTables.vue')
-      }
+
     ]
   },
   {

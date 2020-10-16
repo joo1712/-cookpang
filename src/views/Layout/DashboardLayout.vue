@@ -15,7 +15,7 @@
         <sidebar-item
             :link="{
               name: 'Classify',
-              path: '/icons',
+              path: '/classify',
               icon: 'ni ni-book-bookmark'
               }"
             >
@@ -24,7 +24,7 @@
         <sidebar-item
                 :link="{
                   name: 'Review',
-                  path: '/tables',
+                  path: '/review',
                   icon: 'ni ni-bullet-list-67 text-red'
                 }">
         </sidebar-item>
@@ -32,7 +32,7 @@
         <sidebar-item
               :link="{
                 name: 'Statistics',
-                path: '/maps',
+                path: '/statistics',
                 icon: 'ni ni-chart-bar-32'
               }">
         </sidebar-item>
@@ -40,7 +40,7 @@
         <sidebar-item
               :link="{
                 name: 'Introduce',
-                path: '/maps',
+                path: '/introduce',
                 icon: 'ni ni-building'
               }">
         </sidebar-item>

@@ -4,7 +4,7 @@
       <b-col lg="3" class="order-lg-2">
         <div class="card-profile-image">
           <a href="#">
-            <b-img src="img/theme/team-4.jpg" rounded="circle" />
+            <b-img src="img/theme/team-5.jpg" rounded="circle" />
           </a>
         </div>
       </b-col>
@@ -22,16 +22,16 @@
         <b-col >
           <div class="card-profile-stats d-flex justify-content-center mt-md-5">
             <div>
-              <span class="heading">22</span>
-              <span class="description">Friends</span>
+              <span class="heading">52</span>
+              <span class="description">추천</span>
             </div>
             <div>
-              <span class="heading">10</span>
-              <span class="description">Photos</span>
+              <span class="heading">27</span>
+              <span class="description">친구</span>
             </div>
             <div>
               <span class="heading">89</span>
-              <span class="description">Comments</span>
+              <span class="description">작성글</span>
             </div>
           </div>
         </b-col>
@@ -44,13 +44,13 @@
           <i class="ni location_pin mr-2"></i>Bucharest, Romania
         </div>
         <div class="h5 mt-4">
-          <i class="ni business_briefcase-24 mr-2"></i>Solution Manager - Creative Tim Officer
+          <i class="ni business_briefcase-24 mr-2"></i>가입일: 2020.10.16 20:00:00 
         </div>
         <div>
-          <i class="ni education_hat mr-2"></i>University of Computer Science
+          <i class="ni education_hat mr-2"></i>현재 ??상태 입니다.
         </div>
         <hr class="my-4">
-        <p>Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music.</p>
+        <p>가입시 소개글 입니다.</p>
         <a href="#">Show more</a>
 
       </div>

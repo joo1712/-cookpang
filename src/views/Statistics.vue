@@ -2,7 +2,7 @@
   <div>
     <base-header class="pb-6 pb-8 pt-5 pt-md-8 bg-gradient-success">
       <!-- Card stats -->
-            <b-row>
+        <b-row>
         <b-col xl="3" md="6">
           <stats-card title="총 레시피수"
                       type="gradient-red"
@@ -11,7 +11,7 @@
                       class="mb-4">
 
             <template slot="footer">
-              <b-progress :value="value" :max="max" class="mb-3"></b-progress>
+              <b-progress :value="40" :max="max" class="mb-3"></b-progress>
               <span class="text-success mr-2">최근 10 분 전</span>
             </template>
           </stats-card>
@@ -24,7 +24,7 @@
                       class="mb-4">
 
             <template slot="footer">
-              <b-progress :value="value" :max="max" class="mb-3"></b-progress>
+              <b-progress :value="20" :max="max" class="mb-3"></b-progress>
               <span class="text-success mr-2">최근 20 분 전</span>
             </template>
           </stats-card>
@@ -37,7 +37,7 @@
                       class="mb-4">
 
             <template slot="footer">
-               <b-progress :value="value" :max="max" class="mb-3"></b-progress>
+               <b-progress :value="30" :max="max" class="mb-3"></b-progress>
               <span class="text-danger mr-2">* 09.01 ~ 10.01 기준</span>
             </template>
           </stats-card>
@@ -51,7 +51,7 @@
                       class="mb-4">
 
             <template slot="footer">
-              <b-progress :value="value" :max="max" class="mb-3"></b-progress>
+              <b-progress :value="90" :max="max" class="mb-3"></b-progress>
               <span class="text-success mr-2">실시간</span>
               <span class="text-nowrap">접속회원 보기</span>
             </template>
@@ -61,14 +61,7 @@
     </base-header>
 
     <b-container fluid class="mt--7">
-      <b-row>
-        <b-col>
-          <b-card no-body class="border-0">
-            <div id="map-custom" class="map-canvas"
-                 style="height: 600px;"></div>
-          </b-card>
-        </b-col>
-      </b-row>
+
     </b-container>
   </div>
 </template>
@@ -79,6 +72,11 @@
   GoogleMapsLoader.KEY = API_KEY;
 
   export default {
+    data() {
+      return {
+        max: 100
+      }
+    },
     methods: {
       initMap(google) {
         let map, lat = 40.748817, lng = -73.985428, color = "#5e72e4";
