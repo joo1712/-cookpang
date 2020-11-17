@@ -12,7 +12,10 @@
               <h1 class="display-2 text-white">Hello 주우형</h1>
               <p class="text-white mt-0 mb-5">This is your profile page. You can see the progress you've made with your
                 work and manage your projects or assigned tasks</p>
-              <a href="#!" class="btn btn-info" @click="onCopy">Edit profile</a>
+              <b-button v-b-modal.modal-scrollable class="btn btn-info" >Edit profile</b-button>
+                <b-modal id="modal-scrollable" size="lg">
+                    <EditProfileForm></EditProfileForm>
+                </b-modal>
             </b-col>
           </b-row>
         </b-container>
@@ -25,7 +28,7 @@
           <user-card></user-card>
         </b-col>
         <b-col xl="8" class="order-xl-1">
-          <edit-profile-form></edit-profile-form>
+          <DarkTable></DarkTable>
         </b-col>
       </b-row>
     </b-container>
@@ -34,11 +37,13 @@
 <script>
   import EditProfileForm from './UserProfile/EditProfileForm.vue';
   import UserCard from './UserProfile/UserCard.vue';
+  import DarkTable from '../Tables/RegularTables/DarkTable.vue';
 
   export default {
     components: {
       EditProfileForm,
-      UserCard
+      UserCard,
+      DarkTable
     },
     methods: {
       onCopy() {
@@ -52,3 +57,4 @@
 </script>
 <style>
 </style>
+  

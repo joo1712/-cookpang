@@ -66,10 +66,6 @@
   </div>
 </template>
 <script>
-  import { API_KEY } from './Maps/API_KEY';
-  import GoogleMapsLoader from 'google-maps';
-
-  GoogleMapsLoader.KEY = API_KEY;
 
   export default {
     data() {

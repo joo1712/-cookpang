@@ -35,12 +35,12 @@ const routes = [
       {
         path: '/introduce',
         name: 'introduce',
-        component: () => import(/* 통계 메뉴: "demo" */ '../views/Introduce.vue')
+        component: () => import(/* 소개 메뉴: "demo" */ '../views/Introduce.vue')
       },
       {
         path: '/profile',
-        name: 'profile',
-        component: () => import(/* webpackChunkName: "demo" */ '../views/Pages/UserProfile.vue')
+        name: 'user_Info',
+        component: () => import(/* 사용자 정보: "demo" */ '../views/Pages/UserProfile.vue')
       },
 
     ]

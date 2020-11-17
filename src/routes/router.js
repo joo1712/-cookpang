@@ -6,6 +6,7 @@ Vue.use(VueRouter);
 
 // configure router
 const router = new VueRouter({
+  mode:'history',
   routes, // short for routes: routes
   linkActiveClass: 'active',
   scrollBehavior: (to, from ,savedPosition) => {
@@ -20,3 +21,5 @@ const router = new VueRouter({
 });
 
 export default router;
+
+

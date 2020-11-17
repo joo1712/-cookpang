@@ -1,16 +1,8 @@
 <template>
   <card>
-    <b-row align-v="center" slot="header" >
-      <b-col cols="8">
-        <h3 class="mb-0">Edit profile </h3>
-      </b-col>
-      <b-col cols="4" class="text-right">
-        <a href="#!" class="btn btn-sm btn-primary">Settings</a>
-      </b-col>
-    </b-row>
 
     <b-form @submit.prevent="updateProfile">
-      <h6 class="heading-small text-muted mb-4">User information</h6>
+      <h6 class="heading-small text-muted mb-4">회원 기본정보</h6>
 
       <div class="pl-lg-4">
         <b-row>
@@ -18,7 +10,7 @@
             <base-input
               type="text"
               label="Username"
-              placeholder="Username"
+              placeholder="이름을 입력하세요"
               v-model="user.username"
             >
             </base-input>
@@ -27,7 +19,7 @@
             <base-input
               type="email"
               label="Email address"
-              placeholder="mike@email.com"
+              placeholder="이메일을 입력하세요"
               v-model="user.email"
             >
             </base-input>
@@ -38,7 +30,7 @@
             <base-input
               type="text"
               label="First Name"
-              placeholder="First Name"
+              placeholder="성을 입력하세요"
               v-model="user.firstName"
             >
             </base-input>
@@ -47,7 +39,7 @@
             <base-input
               type="text"
               label="Last Name"
-              placeholder="Last Name"
+              placeholder="이름을 입력하세요"
               v-model="user.lastName"
             >
             </base-input>
@@ -57,7 +49,7 @@
       <hr class="my-4">
 
       <!-- Address -->
-      <h6 class="heading-small text-muted mb-4">Contact information</h6>
+      <h6 class="heading-small text-muted mb-4">연락처 및 주소</h6>
 
       <div class="pl-lg-4">
         <b-row>
@@ -103,11 +95,12 @@
 
       <hr class="my-4">
       <!-- Description -->
-      <h6 class="heading-small text-muted mb-4">About me</h6>
+      <h6 class="heading-small text-muted mb-4">간단 소개</h6>
       <div class="pl-lg-4">
         <b-form-group label="About Me" label-class="form-control-label" class="mb-0" label-for="about-form-textaria">
          <!--  <label class="form-control-label">About Me</label> -->
-          <b-form-textarea rows="4" value="A beautiful premium dashboard for BootstrapVue." id="about-form-textaria" placeholder="A few words about you ..."></b-form-textarea>
+          <b-form-textarea rows="4" value="A beautiful premium dashboard for BootstrapVue." id="about-form-textaria" placeholder="A few words about you ..."
+          v-model="user.aboutMe"></b-form-textarea>
         </b-form-group>
       </div>
 
@@ -120,23 +113,30 @@ export default {
     return {
       user: {
         company: 'Creative Code Inc.',
-        username: 'michael23',
-        email: '',
-        firstName: 'Mike',
-        lastName: 'Andrew',
-        address: 'Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09',
-        city: 'New York',
-        country: 'USA',
-        postalCode: '',
-        aboutMe: `Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.`
+        username: 'joo1712',
+        email: 'jxt302@naver.com',
+        firstName: '주',
+        lastName: '우형',
+        address: '대전광역시 유성구 원신흥동',
+        city: '대전',
+        country: '한국',
+        postalCode: '37',
+        aboutMe: `프로젝트 Cookpang 화면구성을 위한 글입니다.`
       }
     };
   },
   methods: {
     updateProfile() {
       alert('Your data: ' + JSON.stringify(this.user));
-    }
+    },
+    onCopy() {
+        this.$notify({
+          type: 'info',
+          message: '프로필이 적용되었습니다'
+        })
+      }
   }
 };
+
 </script>
 <style></style>

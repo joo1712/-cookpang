@@ -45,7 +45,7 @@
               }">
         </sidebar-item>
 
-        <sidebar-item
+        <sidebar-item v-show="false"
               :link="{
                 name: 'User Profile',
                 path: '/profile',

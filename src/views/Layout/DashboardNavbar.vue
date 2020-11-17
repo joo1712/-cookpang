@@ -39,31 +39,20 @@
                     <img alt="Image placeholder" src="img/theme/team-5.jpg">
                   </span>
             <b-media-body class="ml-2 d-none d-lg-block">
-              <span class="mb-0 text-sm  font-weight-bold">우형이</span>
+              <span class="mb-0 text-sm  font-weight-bold"></span>
             </b-media-body>
           </b-media>
         </a>
 
         <template>
-
           <b-dropdown-header class="noti-title">
             <h6 class="text-overflow m-0">Welcome!</h6>
           </b-dropdown-header>
           <b-dropdown-item href="#!">
             <i class="ni ni-single-02"></i>
+            <router-link to="/profile">
             <span>My profile</span>
-          </b-dropdown-item>
-          <b-dropdown-item href="#!">
-            <i class="ni ni-settings-gear-65"></i>
-            <span>Settings</span>
-          </b-dropdown-item>
-          <b-dropdown-item href="#!">
-            <i class="ni ni-calendar-grid-58"></i>
-            <span>Activity</span>
-          </b-dropdown-item>
-          <b-dropdown-item href="#!">
-            <i class="ni ni-support-16"></i>
-            <span>Support</span>
+            </router-link>
           </b-dropdown-item>
           <div class="dropdown-divider"></div>
           <b-dropdown-item href="#!">
@@ -79,12 +68,14 @@
 <script>
 import { CollapseTransition } from 'vue2-transitions';
 import { BaseNav, Modal } from '@/components';
+import { EditProfileForm } from '@/views/Pages/UserProfile/EditProfileForm.vue';
 
 export default {
   components: {
     CollapseTransition,
     BaseNav,
-    Modal
+    Modal,
+    EditProfileForm,
   },
   props: {
     type: {
@@ -105,7 +96,7 @@ export default {
       showMenu: false,
       searchModalVisible: false,
       searchQuery: ''
-    };
+    }
   },
   methods: {
     capitalizeFirstLetter(string) {
@@ -116,7 +107,7 @@ export default {
     },
     closeDropDown() {
       this.activeNotifications = false;
-    }
+    },
   }
 };
 </script>

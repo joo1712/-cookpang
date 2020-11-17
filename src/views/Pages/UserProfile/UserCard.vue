@@ -51,13 +51,15 @@
         </div>
         <hr class="my-4">
         <p>가입시 소개글 입니다.</p>
-        <a href="#">Show more</a>
+        <!-- <a href="#">Show more</a> -->
 
       </div>
     </b-card-body>
   </b-card>
 </template>
 <script>
-export default {};
+export default {
+
+};
 </script>
 <style></style>

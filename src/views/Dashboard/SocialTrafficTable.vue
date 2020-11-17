@@ -71,7 +71,7 @@
             progressType: 'gradient-primary',
           },
           {
-            name: 'Cocomelon',
+            name: '코코멜론',
             visitors: '16',
             progress: 55,
             progressType: 'gradient-info',

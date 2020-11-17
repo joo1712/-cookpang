@@ -69,7 +69,7 @@
             <b-row class="icon-examples">
               <b-card
                 title="제목 입니다."
-                img-src="img/food/rice.jpg"
+                img-src="img/food/hot.jpg"
                 img-alt="Image"
                 img-top
                 tag="article"
@@ -86,7 +86,7 @@
                 </b-card>
                 <b-card
                 title="제목 입니다."
-                img-src="img/food/rice.jpg"
+                img-src="img/food/wa.jpg"
                 img-alt="Image"
                 img-top
                 tag="article"
